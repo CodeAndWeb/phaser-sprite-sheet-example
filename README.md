@@ -1,7 +1,13 @@
-# Phaser 3 Webpack Project Template
+Phaser 3 sprite sheet optimization tutorial
+===========================================
 
-A Phaser 3 Project Template
+The complete tutorial is available from here: [Creating spritesheets for Phaser 3 with TexturePacker](https://www.codeandweb.com/blog/2018/03/01/creating-spritesheets-for-phaser3-with-texturepacker)
 
-## How to run:
+Content:
 
-`npm run build`
+- Creating sprite sheets with TexturePacker
+- Loading sprite sheets in Phaser
+- Setting pivot points with TexturePacker
+- Playing animations from the sprite sheet
+- Optimizing start up time and reducing download size
+

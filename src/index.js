@@ -35,9 +35,9 @@ function create()
     capguy.anims.play('walk');
 }
 
-function update()
+function update(time, delta)
 {
-    capguy.x += 3;
+    capguy.x += delta/8;
     if(capguy.x > 800)
     {
         capguy.x = -50;
