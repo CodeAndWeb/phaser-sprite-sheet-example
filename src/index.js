@@ -7,28 +7,39 @@ var config = {
     height: 600,
     scene: {
         preload: preload,
-        create: create
+        create: create,
+        update: update
     }
 };
 
 var game = new Phaser.Game(config);
+var capguy;
 
-function preload ()
+function preload()
 {
-    this.load.image('logo', 'assets/logo.png');
+    this.load.atlas('cityscene', 'assets/cityscene.png', 'assets/cityscene.json');
 }
 
-function create ()
+function create()
 {
-    var logo = this.add.image(400, 150, 'logo');
+    // background
+    var background = this.add.sprite(0, 0, 'cityscene', 'background.png');
 
-    this.tweens.add({
-        targets: logo,
-        y: 450,
-        duration: 2000,
-        ease: 'Power2',
-        yoyo: true,
-        loop: -1
-    });
+    // sprite
+    capguy = this.add.sprite(0, 400, 'cityscene', 'capguy/walk/0001.png');
+    capguy.setScale(0.5, 0.5);
 
+    // animation
+    var frameNames = this.anims.generateFrameNames('cityscene', { start: 1, end: 8, zeroPad: 4, prefix:'capguy/walk/', suffix:'.png' });
+    this.anims.create({ key: 'walk', frames: frameNames, frameRate: 10, repeat: -1 });
+    capguy.anims.play('walk');
+}
+
+function update()
+{
+    capguy.x += 3;
+    if(capguy.x > 800)
+    {
+        capguy.x = -50;
+    }
 }
