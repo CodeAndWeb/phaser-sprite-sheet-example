@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/CodeAndWeb/TexturePacker-Phaser3/issues"
   },
-  "homepage": "https://www.codeandweb.com/blog/2018/03/01/creating-spritesheets-for-phaser3-with-texturepacker",
+  "homepage": "https://www.codeandweb.com/texturepacker/tutorials/how-to-create-sprite-sheets-for-phaser3",
   "devDependencies": {
     "webpack-dev-server": "^2.11.0",
     "webpack": "^3.4.1",
