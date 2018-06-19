@@ -17,7 +17,7 @@ var capguy;
 
 function preload()
 {
-    this.load.atlas('cityscene', 'assets/cityscene.png', 'assets/cityscene.json');
+    this.load.multiatlas('cityscene', 'assets/cityscene.json', "assets");
 }
 
 function create()
