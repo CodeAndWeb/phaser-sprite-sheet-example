@@ -1,28 +1,38 @@
 {
   "name": "TexturePacker-Phaser3",
-  "version": "1.0.6",
+  "version": "1.1.2",
   "description": "Small example showing how to use TexturePacker with Phaser 3",
   "main": "src/index.js",
   "scripts": {
-    "build": "webpack",
-    "start": "webpack-dev-server"
+    "build": "webpack --config webpack/prod.js ",
+    "start": "webpack-dev-server --config webpack/base.js --open"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CodeAndWeb/TexturePacker-Phaser3.git"
   },
   "author": "Joachim Grill",
-  "license": "SEE LICENSE IN LICENSE",
+  "license": "see LICENSE file",
   "bugs": {
     "url": "https://github.com/CodeAndWeb/TexturePacker-Phaser3/issues"
   },
   "homepage": "https://www.codeandweb.com/texturepacker/tutorials/how-to-create-sprite-sheets-for-phaser3",
   "devDependencies": {
-    "raw-loader": "^0.5.1",
-    "webpack": "^3.4.1",
-    "webpack-dev-server": "^2.11.0"
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
+    "babel-loader": "^9.1.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.3",
+    "raw-loader": "^4.0.2",
+    "terser-webpack-plugin": "^5.3.9",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1",
+    "webpack-merge": "^5.9.0"
   },
   "dependencies": {
-    "phaser": "^3.10.1"
+    "phaser": "^3.60.0"
   }
 }
