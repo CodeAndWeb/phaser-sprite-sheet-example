@@ -15,12 +15,12 @@ How to run the example (yarn):
 
     git clone https://github.com/CodeAndWeb/TexturePacker-Phaser3.git
     yarn
-    yarn run webpack-dev-server
-
+    yarn start
+    
 Or with npm:
 
     git clone https://github.com/CodeAndWeb/TexturePacker-Phaser3.git
-    npm
-    npm run webpack-dev-server
+    npm install
+    npm start
 
 The demo runs at [http://localhost:8080](http://localhost:8080)
