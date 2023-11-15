@@ -5,7 +5,7 @@
 			"format": "RGBA8888",
 			"size": {
 				"w": 943,
-				"h": 934
+				"h": 959
 			},
 			"scale": 1,
 			"frames": [
@@ -85,31 +85,6 @@
 					}
 				},
 				{
-					"filename": "capguy/walk/0002.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 187,
-						"h": 324
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 8,
-						"w": 168,
-						"h": 303
-					},
-					"frame": {
-						"x": 1,
-						"y": 603,
-						"w": 168,
-						"h": 303
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
-					}
-				},
-				{
 					"filename": "capguy/walk/0008.png",
 					"rotated": false,
 					"trimmed": true,
@@ -124,8 +99,8 @@
 						"h": 319
 					},
 					"frame": {
-						"x": 171,
-						"y": 603,
+						"x": 1,
+						"y": 627,
 						"w": 161,
 						"h": 319
 					},
@@ -149,35 +124,10 @@
 						"h": 316
 					},
 					"frame": {
-						"x": 334,
-						"y": 603,
+						"x": 164,
+						"y": 627,
 						"w": 158,
 						"h": 316
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
-					}
-				},
-				{
-					"filename": "capguy/walk/0003.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 187,
-						"h": 324
-					},
-					"spriteSourceSize": {
-						"x": 26,
-						"y": 2,
-						"w": 152,
-						"h": 307
-					},
-					"frame": {
-						"x": 494,
-						"y": 603,
-						"w": 152,
-						"h": 307
 					},
 					"anchor": {
 						"x": 0.5,
@@ -199,14 +149,95 @@
 						"h": 314
 					},
 					"frame": {
-						"x": 648,
-						"y": 603,
+						"x": 324,
+						"y": 627,
 						"w": 146,
 						"h": 314
 					},
 					"anchor": {
 						"x": 0.5,
 						"y": 0.5
+					}
+				},
+				{
+					"filename": "capguy/walk/0003.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 187,
+						"h": 324
+					},
+					"spriteSourceSize": {
+						"x": 26,
+						"y": 2,
+						"w": 152,
+						"h": 307
+					},
+					"frame": {
+						"x": 472,
+						"y": 627,
+						"w": 152,
+						"h": 307
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "capguy/walk/0002.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 187,
+						"h": 324
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 8,
+						"w": 168,
+						"h": 303
+					},
+					"frame": {
+						"x": 626,
+						"y": 603,
+						"w": 168,
+						"h": 303
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "button.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 100,
+						"h": 50
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 100,
+						"h": 50
+					},
+					"frame": {
+						"x": 626,
+						"y": 908,
+						"w": 100,
+						"h": 50
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					},
+					"scale9Borders": {
+						"x": 16,
+						"y": 14,
+						"w": 69,
+						"h": 22
 					}
 				},
 				{
@@ -240,6 +271,6 @@
 	"meta": {
 		"app": "https://www.codeandweb.com/texturepacker",
 		"version": "3.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:52a5713359e8a74bcaf3a77a7fdea7c6:6cc19705e7b39b96deecddd16df19941:292542e6853f316339413b9243f95b10$"
+		"smartupdate": "$TexturePacker:SmartUpdate:cfb23f31dec16b45688022e67f1c62e3:a7b557a8b17d317efb009c64cc7cd6e2:292542e6853f316339413b9243f95b10$"
 	}
 }

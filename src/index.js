@@ -28,6 +28,10 @@ class MyGame extends Phaser.Scene
         });
         this.anims.create({ key: 'walk', frames: frameNames, frameRate: 10, repeat: -1 });
         this.capguy.anims.play('walk');
+
+        // 9-slice objects
+        this.add.nineslice(75, 50,'cityscene', 'button.png', 100, 50);
+        this.add.nineslice(250, 50,'cityscene', 'button.png', 200, 50);
     }
 
     update(time, delta)
