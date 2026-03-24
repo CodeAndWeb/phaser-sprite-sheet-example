@@ -1,8 +1,8 @@
 {
 	"textures": [
 		{
-			"image": "cityscene.png",
-			"format": "RGBA8888",
+			"image": "cityscene-dxt5.ktx",
+			"format": "DXT5",
 			"size": {
 				"w": 952,
 				"h": 968
@@ -271,6 +271,6 @@
 	"meta": {
 		"app": "https://www.codeandweb.com/texturepacker",
 		"version": "3.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:c7de3cd37747f74b36effcfc3cecb957:a7b557a8b17d317efb009c64cc7cd6e2:292542e6853f316339413b9243f95b10$"
+		"smartupdate": "$TexturePacker:SmartUpdate:cf438ffb471ed6e38eb8ebd9791f93fe:a7b557a8b17d317efb009c64cc7cd6e2:74d695c2ac60885f16c7bea00422d884$"
 	}
 }

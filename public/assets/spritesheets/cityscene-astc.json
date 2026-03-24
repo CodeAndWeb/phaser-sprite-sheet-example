@@ -1,8 +1,8 @@
 {
 	"textures": [
 		{
-			"image": "cityscene.png",
-			"format": "RGBA8888",
+			"image": "cityscene-astc.ktx",
+			"format": "ASTC_4x4",
 			"size": {
 				"w": 952,
 				"h": 968
@@ -271,6 +271,6 @@
 	"meta": {
 		"app": "https://www.codeandweb.com/texturepacker",
 		"version": "3.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:c7de3cd37747f74b36effcfc3cecb957:a7b557a8b17d317efb009c64cc7cd6e2:292542e6853f316339413b9243f95b10$"
+		"smartupdate": "$TexturePacker:SmartUpdate:79aa29ae66e5fd22e2cc0df4b26ebe99:a7b557a8b17d317efb009c64cc7cd6e2:7e5bf8b2d875f7a08d1fd4b74258c4af$"
 	}
 }
