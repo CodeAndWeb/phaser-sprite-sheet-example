@@ -32,17 +32,9 @@ export class Game extends Scene
 
     create ()
     {
-        // Compressed textures can't be premultiplied on upload (WebGL spec ignores
-        // UNPACK_PREMULTIPLY_ALPHA_WEBGL for compressedTexImage2D), but Phaser's
-        // default NORMAL blend mode assumes premultiplied alpha. Override it with
-        // straight-alpha blending so semi-transparent pixels render correctly.
-        const gl = this.renderer.gl;
-        this.renderer.blendModes[0] = {
-            func: [gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA],
-            equation: gl.FUNC_ADD
-        };
-        // Force Phaser to re-apply the blend func on next draw
-        this.renderer.currentBlendMode = -1;
+        // log which texture format was actually loaded
+        const src = this.textures.get('cityscene').source[0];
+        console.log('cityscene compression:', src.compressionAlgorithm ?? 'none (uncompressed)');
 
         // background
         this.add.sprite(0, 0, 'cityscene', 'background.png');
