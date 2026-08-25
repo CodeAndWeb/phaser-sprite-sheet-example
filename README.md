@@ -6,7 +6,7 @@ The complete tutorial is available from here: [Creating sprite sheets for Phaser
 Content:
 
 - Creating sprite sheets with TexturePacker
-- Loading sprite sheets in Phaser (version 3 or newer)
+- Loading sprite sheets in Phaser 4
 - Setting pivot points with TexturePacker
 - Playing animations from the sprite sheet
 - Optimizing start up time and reducing download size
