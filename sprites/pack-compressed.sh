@@ -3,7 +3,8 @@
 # Generate compressed sprite sheets using TexturePacker
 # Creates KTX textures with ETC2, DXT5, and ASTC4x4 pixel formats
 #
-# --flip-pvr:           Phaser 4 requires compressed textures encoded bottom-up (GL orientation)
+# --flip-y:             Phaser 4 requires compressed textures encoded bottom-up (GL orientation);
+#                       (requires TexturePacker 8.2.1 or newer, use --flip-pvr with older versions)
 # --premultiply-alpha:  WebGL can't premultiply compressed textures on upload, so bake it in;
 #                       matches Phaser's default premultiplied-alpha blending
 
@@ -14,7 +15,7 @@ OUTPUT_DIR="../public/assets/spritesheets"
 TexturePacker "$TPS_FILE" \
     --texture-format ktx \
     --pixel-format ETC2_RGBA \
-    --flip-pvr \
+    --flip-y \
     --premultiply-alpha \
     --json-file "${OUTPUT_DIR}/cityscene-etc2.json"
 
@@ -22,7 +23,7 @@ TexturePacker "$TPS_FILE" \
 TexturePacker "$TPS_FILE" \
     --texture-format ktx \
     --pixel-format DXT5 \
-    --flip-pvr \
+    --flip-y \
     --premultiply-alpha \
     --json-file "${OUTPUT_DIR}/cityscene-dxt5.json"
 
@@ -30,6 +31,6 @@ TexturePacker "$TPS_FILE" \
 TexturePacker "$TPS_FILE" \
     --texture-format ktx \
     --pixel-format ASTC_4x4 \
-    --flip-pvr \
+    --flip-y \
     --premultiply-alpha \
     --json-file "${OUTPUT_DIR}/cityscene-astc.json"
